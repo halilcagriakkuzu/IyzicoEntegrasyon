@@ -14,7 +14,7 @@ class IyzicoController extends Controller
         foreach ($cart as $productId => $detail) {
             $totalPrice += $detail['price'] * $detail['quantity'];
         }
-        $totalPrice = number_format((float)$totalPrice, 2, '.', '');
+        //$totalPrice = number_format((float)$totalPrice, 2, '.', '');
         return $totalPrice;
     }
 
@@ -24,13 +24,13 @@ class IyzicoController extends Controller
         foreach ($cart as $productId => $detail) {
             $totalPrice += $this->priceCut($detail['price'], $cut) * $detail['quantity'];
         }
-        $totalPrice = number_format((float)$totalPrice, 2, '.', '');
+        //$totalPrice = number_format((float)$totalPrice, 2, '.', '');
         return $totalPrice;
     }
 
     private function getTotalPriceWithVAT($price) {
         $priceVAT = $price * 1.18;
-        $priceVAT = number_format((float)$priceVAT, 2, '.', '');
+        //$priceVAT = number_format((float)$priceVAT, 2, '.', '');
         return $priceVAT;
     }
 
