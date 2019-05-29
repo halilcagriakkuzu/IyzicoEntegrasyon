@@ -5,10 +5,12 @@ Bootstrap ve jQuery kullanılmıştır.
 
 - $ `composer install` komutu ile gerekli back-end paketler kurulmalı.
 - $ `npm install` komutu ile gerekli front-end paketler kurulmalı.
-### Linux/Unix:
+
+#### Linux/Unix:
 - $ `cp .env.example .env` komutu ile bir .env dosyası oluşturulmalı.
-### Windows:
+#### Windows:
 - $ `copy .env.example .env` komutu ile bir .env dosyası oluşturulmalı.
+
 - .env dosyası içerisindeki APIKEY ve APISECRET kısmı Iyzico deneme hesabından alınıp eklenmeli.
 - .env dosyası içerisinde database alanları ayarlanmalı ve bir database oluşturulmalı.
 - $ `php artisan key:generate` komutu ile laravel key'i oluşturulmalı.
