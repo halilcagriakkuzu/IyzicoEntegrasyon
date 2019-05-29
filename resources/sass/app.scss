@@ -1,0 +1,59 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+body {
+    padding-top: 56px;
+}
+
+// [+] Input-Mask
+.shell {
+    position: relative;
+    line-height: 1; }
+    .shell span {
+      position: absolute;
+      left: 3px;
+      top: 1px;
+      color: #ccc;
+      pointer-events: none;
+      z-index: -1; }
+      .shell span i {
+        font-style: normal;
+        /* any of these 3 will work */
+        color: transparent;
+        opacity: 0;
+        visibility: hidden; }
+  
+  input.masked,
+  .shell span {
+    font-size: 16px;
+    font-family: monospace;
+    padding-right: 10px;
+    background-color: transparent;
+    text-transform: uppercase; 
+}
+// [-] Input-Mask
+
+.product-image{
+    height: 155px;
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+footer{
+    margin-top: 20px;
+}
+.input-group.is-invalid {
+    ~ .invalid-feedback {
+      display: block;
+    }
+  }
